@@ -4,13 +4,13 @@ pragma solidity ^0.8.13;
 // EVENT TICKET
 
 contract EventTicket {
-    uint256 numberOfTicket;
-    uint256 ticketPrice;
-    uint256 totalAmount;
-    uint256 startsAt;
-    uint256 endsAt;
-    uint256 timeRange;
-    string message = "Buy your very first Event Ticket";
+    uint256 public numberOfTicket;
+    uint256 public ticketPrice;
+    uint256 public totalAmount;
+    uint256 public startsAt;
+    uint256 public endsAt;
+    uint256 public timeRange;
+    string public message = "Buy your very first Event Ticket";
 
     constructor(uint256 _ticketPrice) {
         ticketPrice = _ticketPrice;

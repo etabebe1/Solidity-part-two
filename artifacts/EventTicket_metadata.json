@@ -37,7 +37,98 @@
 			},
 			{
 				"inputs": [],
+				"name": "endsAt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numberOfTicket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startsAt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ticketPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "timeRange",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -77,11 +168,11 @@
 	},
 	"sources": {
 		"10-event-ticket.sol": {
-			"keccak256": "0x0ba52f472924ed918b1c60f3343e4accbb53543158c0c54aaf69a87d6e9631b5",
+			"keccak256": "0x5eb89ab0707389993d80e5e344c5194e25ec5d3a46187903e70a52d41c439144",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2593408b1c4781c357d5b0933bbef48545fd11efc21f560f22668f104935777b",
-				"dweb:/ipfs/QmUJ4GNH4MiVz3QqDQ2aJM55UaCs2s3qE2XcQBzPuW8Gte"
+				"bzz-raw://7fc7e1095685ed0f38b27bb2974dbe4dda13b7e28ebb56258f161fbf70a877b4",
+				"dweb:/ipfs/QmfHrk5QGL3RtSgkvDMscVugT5jydFGofMXW5PEv5Ljo38"
 			]
 		}
 	},
