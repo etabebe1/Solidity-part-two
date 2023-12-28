@@ -7,28 +7,15 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getConstant",
+				"name": "forLoopFunction",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "address"
+						"type": "uint256[]"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"13-constant-in-solidity.sol": "Constant"
+			"15-for while.sol": "forWhileLoop"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"13-constant-in-solidity.sol": {
-			"keccak256": "0x57177577e02e2787af995ab6f9163ef3fcfc712fb43d9037564df2c88237d534",
+		"15-for while.sol": {
+			"keccak256": "0xeb502d3ae68729713bc3bd969de3f3df85a93ff25851b188596326503ded9986",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3ee4e67f08fd7b4d21226567a511bb6c33097b61172c89395e2eb60ca091c5d",
-				"dweb:/ipfs/QmdgigEBKMbtUaqDv57LCNCjDNyhbCabePjjr9J8NKEKbw"
+				"bzz-raw://5ddb322a9203867a5b760ce200682aa9fdd0a9e53381ff3d25d9c166d09356eb",
+				"dweb:/ipfs/QmPg2AuTsMekE5xv77Kr5ZvCbsuyV3UU4zxszpMZbqWGxW"
 			]
 		}
 	},

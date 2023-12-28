@@ -6,29 +6,22 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getConstant",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myAddress",
+				"name": "DoWhileLoop",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "address"
+						"type": "uint256[]"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -45,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"13-constant-in-solidity.sol": "Constant"
+			"14-Do-while-loop.sol": "doWhileLoop"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"13-constant-in-solidity.sol": {
-			"keccak256": "0x57177577e02e2787af995ab6f9163ef3fcfc712fb43d9037564df2c88237d534",
+		"14-Do-while-loop.sol": {
+			"keccak256": "0x34a55ac97f466d49f228a320680ad67378af7219b97b5124bbe2f62d36471d74",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3ee4e67f08fd7b4d21226567a511bb6c33097b61172c89395e2eb60ca091c5d",
-				"dweb:/ipfs/QmdgigEBKMbtUaqDv57LCNCjDNyhbCabePjjr9J8NKEKbw"
+				"bzz-raw://b204f1c3bb8bebce41c3dfa468ba2480fb0a911251358db5a1d7ef6c1d3c8605",
+				"dweb:/ipfs/QmSyEa2sAsSSQgaSH7umD3Uq21CY9uLeZDEtZtQD1cxVcV"
 			]
 		}
 	},
