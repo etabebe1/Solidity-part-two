@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"17-Assert.sol": "Asse"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"17-Assert.sol": {
+			"keccak256": "0xce56cb43435b821466c6addd350af0d724d291102d9c6d4b4b9b5f9301259edb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a933078cec3e334b8473b62c5a78e59b0674f0283b10307db5f25e97ffc4ee45",
+				"dweb:/ipfs/QmP28yqckJjNpnKQaUtBzr1qfWTA9jpmPCEXVeK6bGFL1V"
+			]
+		}
+	},
+	"version": 1
+}
