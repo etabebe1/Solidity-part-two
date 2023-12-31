@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"15-for while.sol": "forWhileLoop"
+			"15-for.sol": "forWhileLoop"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,7 +46,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"15-for while.sol": {
+		"15-for.sol": {
 			"keccak256": "0xeb502d3ae68729713bc3bd969de3f3df85a93ff25851b188596326503ded9986",
 			"license": "MIT",
 			"urls": [
