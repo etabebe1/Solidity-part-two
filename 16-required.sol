@@ -17,5 +17,3 @@ contract Require {
         return true;
     }
 }
-
-// cont...
