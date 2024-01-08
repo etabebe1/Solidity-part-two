@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"28-import struct.sol": "Todos"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"28-StructDeclaration.sol": {
+			"keccak256": "0xc06739c03c1061a8ed1f7a81cd3ded73c2eb51fa2e0be7b2f46fd5d28ffb0b02",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4d848ef576433b715810a5949aabad4ca6d90e282fb0ff470b15a25b450183bc",
+				"dweb:/ipfs/QmdP6v3n1ntaV2iH2MBYdMtmHeZcfEtkUscVAcpamSZtXL"
+			]
+		},
+		"28-import struct.sol": {
+			"keccak256": "0x342ed3a5e70efd2f1d6522c9a140139ec6d3a4927f5487203041449c7fad1da5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4f9c0142d6e7ca63fc2348c902376751975e477990bb6038627707691ed0c649",
+				"dweb:/ipfs/QmcGwZB5sqmXz3qMpJovg6KJMJD1sAoH3EsT1jHEtRdroD"
+			]
+		}
+	},
+	"version": 1
+}
