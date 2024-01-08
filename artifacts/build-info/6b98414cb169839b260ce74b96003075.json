@@ -1,0 +1,118 @@
+{
+	"id": "6b98414cb169839b260ce74b96003075",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.22",
+	"solcLongVersion": "0.8.22+commit.4fc1097e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"25-enumDeclaration.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\nenum Status { Pending, Shipping, Rejected, Accepted, Canceled }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"25-enumDeclaration.sol": {
+				"ast": {
+					"absolutePath": "25-enumDeclaration.sol",
+					"exportedSymbols": {
+						"Status": [
+							7
+						]
+					},
+					"id": 8,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".13"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:24:0"
+						},
+						{
+							"canonicalName": "Status",
+							"id": 7,
+							"members": [
+								{
+									"id": 2,
+									"name": "Pending",
+									"nameLocation": "71:7:0",
+									"nodeType": "EnumValue",
+									"src": "71:7:0"
+								},
+								{
+									"id": 3,
+									"name": "Shipping",
+									"nameLocation": "80:8:0",
+									"nodeType": "EnumValue",
+									"src": "80:8:0"
+								},
+								{
+									"id": 4,
+									"name": "Rejected",
+									"nameLocation": "90:8:0",
+									"nodeType": "EnumValue",
+									"src": "90:8:0"
+								},
+								{
+									"id": 5,
+									"name": "Accepted",
+									"nameLocation": "100:8:0",
+									"nodeType": "EnumValue",
+									"src": "100:8:0"
+								},
+								{
+									"id": 6,
+									"name": "Canceled",
+									"nameLocation": "110:8:0",
+									"nodeType": "EnumValue",
+									"src": "110:8:0"
+								}
+							],
+							"name": "Status",
+							"nameLocation": "62:6:0",
+							"nodeType": "EnumDefinition",
+							"src": "57:63:0"
+						}
+					],
+					"src": "32:88:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

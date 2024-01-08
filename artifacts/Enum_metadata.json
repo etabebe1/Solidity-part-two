@@ -7,50 +7,10 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "cancel",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "enum Enum.Status",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "reset",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "enum Enum.Status",
-						"name": "_status",
-						"type": "uint8"
-					}
-				],
-				"name": "setStatus",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "status",
 				"outputs": [
 					{
-						"internalType": "enum Enum.Status",
+						"internalType": "enum Status",
 						"name": "",
 						"type": "uint8"
 					}
@@ -72,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"25-enum.sol": "Enum"
+			"26-importing-enum.sol": "Enum"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -86,12 +46,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"25-enum.sol": {
-			"keccak256": "0x664aa2d8d998ebe7acbb4b7a32f69b9a4adfba0e834551388d0721fe15ace015",
+		"25-enumDeclaration.sol": {
+			"keccak256": "0x085c7dcfd038e874078ee628387765a08d76aea42e19a107112dece50971d2f3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f2e0bab749895f84fef70b152a94bebba49b24ece639a20619097cdd64a58da",
-				"dweb:/ipfs/QmfYW1MuDBABvik6v1Lz9zajAtJhWDev52t2F2KjDimASf"
+				"bzz-raw://282a13472c723b2ae5c4562dadbf80b0ab2d126dc2a85ea61e6bce430790c16d",
+				"dweb:/ipfs/QmS8vNHVPz7tALvTvdxd89PvNoBNXZifzkAhFDKLruQSd3"
+			]
+		},
+		"26-importing-enum.sol": {
+			"keccak256": "0x0c2edb073b55d6be1adfca53488e651f3d6d25cf7011d92217dda46912c05377",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e39f7f574c59cb111220498274ec81efafbabf310dfa18a4e9f36e1452e815d8",
+				"dweb:/ipfs/QmRQcYU7nMLfdsnmhWVLmHYfY2DVNpnbBJBM98rCjubtxu"
 			]
 		}
 	},
