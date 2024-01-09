@@ -6,24 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_text",
-						"type": "string"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [],
-				"name": "name",
+				"name": "funcInContract",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -31,20 +15,7 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "text",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -61,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"20-contract.sol": "C"
+			"32-inheritance.sol": "C"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -75,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"20-contract.sol": {
-			"keccak256": "0x8630ae4fb31e8d9bd7765f007f7c271fbcac1c14d47205cbc99156247910452c",
+		"32-inheritance.sol": {
+			"keccak256": "0x2c2f9e5f506ac07b25f8975a9101ba9bbd7aba9b9279f7c76bf8f1beb6920d93",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f42afdf39024ec88d96319b81ddcfe7b78f7e1e485314698e0f1f9948208ac87",
-				"dweb:/ipfs/QmT3D6MG5bmPdFjrZ2TC2r915MsNvViwGvc8S6zndKpLs3"
+				"bzz-raw://9b647cce9b9b3ae2a997ea5ed45e3bc14c70994746b3997b732b99e0f8b92e46",
+				"dweb:/ipfs/QmU2iTQJgVzY5tKsC2K2aJdqoGGPY1zrWKQ4Z2fi94AKYw"
 			]
 		}
 	},

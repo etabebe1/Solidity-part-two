@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"32-inheritance.sol": "B"
+			"32-inheritance.sol": "A"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
