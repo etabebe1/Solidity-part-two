@@ -6,16 +6,30 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "funcInContract",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "message",
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "funcInContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funcInContract2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"32-inheritance.sol": "D"
+			"34-super.sol": "D"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"32-inheritance.sol": {
-			"keccak256": "0x2c2f9e5f506ac07b25f8975a9101ba9bbd7aba9b9279f7c76bf8f1beb6920d93",
+		"34-super.sol": {
+			"keccak256": "0xe5d4d1bf92298ce247bd2524c4578ed6a2c74ff39ab8cca78d19869f42442dd9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b647cce9b9b3ae2a997ea5ed45e3bc14c70994746b3997b732b99e0f8b92e46",
-				"dweb:/ipfs/QmU2iTQJgVzY5tKsC2K2aJdqoGGPY1zrWKQ4Z2fi94AKYw"
+				"bzz-raw://997dbf28d1c1264e1e0de84d87a6aca30fbdeac24f4850bb4ac69103043316e8",
+				"dweb:/ipfs/Qmae3X5Ncg7ffgpJ7fwenwZNFENS26fqJhXHmCYdKPHbsQ"
 			]
 		}
 	},
