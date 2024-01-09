@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "funcInContract",
+				"name": "getName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -15,7 +15,20 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -32,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"32-inheritance.sol": "A"
+			"33-shadowing.sol": "A"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"32-inheritance.sol": {
-			"keccak256": "0x2c2f9e5f506ac07b25f8975a9101ba9bbd7aba9b9279f7c76bf8f1beb6920d93",
+		"33-shadowing.sol": {
+			"keccak256": "0x2c610b786d719847885756299f45ae03e47e3e65eab3202f84d44a1dfcf3f750",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b647cce9b9b3ae2a997ea5ed45e3bc14c70994746b3997b732b99e0f8b92e46",
-				"dweb:/ipfs/QmU2iTQJgVzY5tKsC2K2aJdqoGGPY1zrWKQ4Z2fi94AKYw"
+				"bzz-raw://cd4d2f154c65702c667e1db75c60418ce5c812cbaa46b82fb7226c55729749e4",
+				"dweb:/ipfs/Qma3cx52itCot4bSkNjG3XcjNgyW5TaRDyvV4rmpCw8TCM"
 			]
 		}
 	},
