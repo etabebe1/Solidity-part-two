@@ -85,6 +85,7 @@ contract Counter {
 
 interface ICounter {
     function count() external view returns (uint);
+    
     function increment() external; 
 }
 
