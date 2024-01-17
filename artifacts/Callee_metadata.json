@@ -6,20 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_newOwner",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
 					}
 				],
-				"name": "changeOwner",
-				"outputs": [],
+				"name": "setX",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -27,36 +28,34 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"name": "decrement",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "locked",
+				"name": "setXandSendEther",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "value",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -89,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"19-modifier.sol": "FunctionMidifier"
+			"42-callingOtherContracts.sol": "Callee"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -103,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"19-modifier.sol": {
-			"keccak256": "0xb743dd321b3413e879be2a744d8d42e84e71cfcf151906e172eea7aa89da2ef0",
+		"42-callingOtherContracts.sol": {
+			"keccak256": "0x24299f75fb8a75a8369fd6f07d0a558ef956a0a1cef59ced92e06bbbe48f8643",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bb860315167c37383a00807fbcc640dc8d92a32760699a08c6fe16adab5c003a",
-				"dweb:/ipfs/QmbhhpPQioeNGdCnfs9fVS8b35VMTLtNobfYd1s3GushzK"
+				"bzz-raw://2b84ab8b79f6ef086584b5d1744516958d3ac0692ded704c969db07f2cc7c87a",
+				"dweb:/ipfs/Qmaez3HUUDZsE1mBEVGDJrzK7UcVDXtMxrhQ2Uj873qayj"
 			]
 		}
 	},

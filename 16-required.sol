@@ -3,6 +3,7 @@ pragma solidity ^0.8.13;
 
 // Solidity Error Handling
 // Require Error Handler keyword -- used to handle errors in smart contract in solidity
+//                               -- takes a condition and returns value, sometimes it only takes condition 
 
 contract Require {
     function checkInput(uint256 _input) public pure returns(string memory) {

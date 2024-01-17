@@ -35,17 +35,18 @@ contract FunctionMidifier {
     }
 
     modifier noReentrancy() {
-        require(!locked, "No reentranct");
+        require(!locked, "No reentrance");
         locked = true;
         _;
         locked = false;
     }
 
     function decrement(uint256 _num) public noReentrancy {
-        x-= 1;
+        x -= 1;
 
         if(_num > 1) {
             decrement(_num -1);
         }
     }
 }
+

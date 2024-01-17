@@ -6,30 +6,34 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "message",
-						"type": "string"
-					}
-				],
-				"name": "Log",
-				"type": "event"
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "funcInContract",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "funcInContract2",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "text",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -46,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"34-super.sol": "D"
+			"20-contract.sol": "D"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"34-super.sol": {
-			"keccak256": "0xe5d4d1bf92298ce247bd2524c4578ed6a2c74ff39ab8cca78d19869f42442dd9",
+		"20-contract.sol": {
+			"keccak256": "0x726a6aa6a49801069433727c26a9bd5d4e62d9bee9fa303c6f31438940b185a1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://997dbf28d1c1264e1e0de84d87a6aca30fbdeac24f4850bb4ac69103043316e8",
-				"dweb:/ipfs/Qmae3X5Ncg7ffgpJ7fwenwZNFENS26fqJhXHmCYdKPHbsQ"
+				"bzz-raw://9b54e5f41cc99e6c9df1533de487ca29b1fcba5c979e61558c3fe1591b850f74",
+				"dweb:/ipfs/QmS54EVzTJrZKhkRgJtQPNErcam5Nq3W1sbJCnLLGyvtED"
 			]
 		}
 	},

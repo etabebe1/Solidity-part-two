@@ -18,6 +18,7 @@ contract Array {
     // Ways to initalize an array
     uint[] public Array1;
     uint[] public Array2 = [1, 2, 3];
+
     // Fixed-size arrays, all elements intitalize to 0
     uint[10] public myFixeSizeRarray;
 
@@ -50,10 +51,12 @@ contract Array {
 
     function remove(uint _index) public {
         delete Array1[_index];
+        // deleting an element in the array will not dicrease in the lenght of an Array
+        // Also the removed element is substitued by 0
     }
     
     // function example() external {
-    //     // create array in memory, only fixed size can be created.
+    //     // create or define an array in memory, only fixed size can be created.
     //     uint[] memory Array3 = new uint[](5);
     // }
 

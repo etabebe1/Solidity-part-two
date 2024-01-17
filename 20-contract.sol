@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-// Base or pa contract X
+// Base or parent contract X
 contract X {
     string public name;
 
@@ -10,7 +10,7 @@ contract X {
     }
 }
 
-// Base contract Y
+// Base or parent contract Y
 contract Y {
     string public text;
 

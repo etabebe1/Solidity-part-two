@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "num",
+				"name": "name",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -20,38 +20,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "sender",
+				"name": "text",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "setValue",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "value",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -71,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"41-delegatecall.sol": "B"
+			"20-contract.sol": "B"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -85,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"41-delegatecall.sol": {
-			"keccak256": "0x96075174be49b2de2e86c7eb31ec439b46aa94b714751d1c1096134fb0af44bc",
+		"20-contract.sol": {
+			"keccak256": "0x726a6aa6a49801069433727c26a9bd5d4e62d9bee9fa303c6f31438940b185a1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79bceac555b26bb184db2d91fd98b3d28b53c9da71e2834f283d283377ee3537",
-				"dweb:/ipfs/QmabVV59wHuUte8gQEZtTDfwitesZjMqKDbnRTN3DnVr4Y"
+				"bzz-raw://9b54e5f41cc99e6c9df1533de487ca29b1fcba5c979e61558c3fe1591b850f74",
+				"dweb:/ipfs/QmS54EVzTJrZKhkRgJtQPNErcam5Nq3W1sbJCnLLGyvtED"
 			]
 		}
 	},
