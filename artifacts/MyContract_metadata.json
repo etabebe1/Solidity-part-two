@@ -6,14 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getTokenReserves",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
+					}
+				],
+				"name": "getCount",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -21,6 +22,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
+					}
+				],
+				"name": "incrementCounter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -37,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"36-interface.sol": "UniswapExample"
+			"36-interface.sol": "MyContract"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

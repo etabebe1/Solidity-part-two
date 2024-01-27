@@ -1,128 +1,81 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.20;
 
-// Interface in Solidity:
+// This code contains contracts and interfaces for a simple counter
+// and for interacting with Uniswap V2, demonstrating basic contract interactions, interface usage, 
+// and integration with external DeFi protocols.
 
-//     Definition:
-//         An interface in Solidity is a way to declare the expected structure of a contract
-//         without implementing the actual functionality.
-//         It defines a set of functions without providing their implementation.
-//         In short, it's way of interaction with other contracts
+// NOTE: We can interact with other contracts by declaring an Interface.
 
-//     How it Works:
-//         Contracts that implement an interface must adhere to the specified
-//         function signatures defined in the interface. 
-//         The implementation details are left to the implementing contract.
+// Interface
 
-//     Why Use it:
-//         Interfaces facilitate interoperability between contracts by 
-//         ensuring that contracts conform to a common set of functions.
-//         They enable contracts to interact seamlessly without specifying 
-//         the complete implementation.
-
-//     When to Use it:
-//         Use interfaces when you want to establish a standard 
-//         or common interface that multiple contracts can adhere to. 
-//         This is especially useful in scenarios where contracts need to
-//         interact with each other but don't need to share the full implementation details.
+//     cannot have any functions implemented
+//     can inherit from other interfaces
+//     all declared functions must be external
+//     cannot declare a constructor
+//     cannot declare state variables
 
 
-// Properties of Interfaces in Solidity:
-
-//     Declaration Only:
-//         Interfaces declare the function signatures 
-//         without providing any implementation details. 
-//         They act as a contract blueprint.
-
-//     No State Variables:
-//         Interfaces do not contain state variables. 
-//         They focus solely on defining the expected behavior through function declarations.
-
-//     No Function Bodies:
-//         Functions declared in interfaces have no implementation
-//         (no function bodies). Implementing contracts provide the actual code for these functions.
-
-//     Implicitly External:
-//         Functions in interfaces are implicitly external. 
-//         They are intended to be called from external contracts, 
-//         and there's no need to specify the external keyword.
-
-//     No Constructors:
-//         Interfaces cannot have constructors. 
-//         They are purely for defining function signatures.
-
-//     No Inheritance or Implementation:
-//         Interfaces do not provide any implementation or 
-//         inherit from other contracts. 
-//         They are stand-alone structures defining a set of functions.
-
-//     Implicit Virtual Functions:
-//         All functions in interfaces are implicitly virtual. 
-//         Implementing contracts can choose to override these functions, 
-//         providing their own implementation.
-
-//     Limited to Public Functions:
-//         Interface functions are implicitly public. 
-//         They are designed to be accessed externally, and 
-//         specifying visibility is not required.
-
-//     Cannot Be Deployed:
-//         Interfaces cannot be deployed as contracts on the blockchain. 
-//         They exist solely to define a set of functions that other contracts can adhere to.
-
-//     Promotes Standardization:
-//         The primary purpose of interfaces is to promote standardization across contracts,
-//         enabling them to communicate seamlessly without requiring 
-//         a full implementation of each other's functionality.
-
+// A simple contract that maintains a counter.
 contract Counter {
-    uint public count;
+    uint public count;  // Public state variable to store the count.
 
+    // Function to increment the count by 1.
     function increment() external {
         count += 1;
     }
 }
 
+// Interface for the Counter contract.
 interface ICounter {
-    function count() external view returns (uint);
-    
-    function increment() external; 
+    function count() external view returns (uint); // Function to get the current count.
+
+    function increment() external; // Function to increment the count.
 }
 
-contract myContract {
+// Contract that interacts with the Counter contract.
+contract MyContract {
+    // Function to increment the count of a Counter contract.
     function incrementCounter(address _counter) external {
         ICounter(_counter).increment();
     }
 
+    // Function to get the count from a Counter contract.
     function getCount(address _counter) external view returns (uint) {
         return ICounter(_counter).count();
     }
 }
 
-// Uniswap example 
+// Uniswap V2 Factory interface.
 interface UniswapV2Factory {
-    function getPair(address tokenA, address tokenB) external view returns (address pair);
+    // Function to get the address of a pair for two tokens.
+    function getPair(
+        address tokenA,
+        address tokenB
+    ) external view returns (address pair);
 }
 
+// Uniswap V2 Pair interface.
 interface UniswapV2Pair {
-    function getReserves() 
+    // Function to get reserves of the pair and the last block timestamp.
+    function getReserves()
         external
         view
-        returns (
-            uint112 reserve0, 
-            uint112 reserve1, 
-            uint32 blockTimestampLast
-            );
+        returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
 }
 
+// Contract to interact with Uniswap V2.
 contract UniswapExample {
-    address private factory = 0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB;
-    address private dai = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
-    address private weth = 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db;
+    address private factory = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f; // Address of Uniswap V2 Factory.
+    address private dai = 0x6B175474E89094C44Da98b954EedeAC495271d0F; // DAI token address.
+    address private weth = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2; // WETH token address.
 
+    // Function to get the reserves of the DAI/WETH pair from Uniswap.
     function getTokenReserves() external view returns (uint, uint) {
+        // Get the address of the DAI/WETH pair.
         address pair = UniswapV2Factory(factory).getPair(dai, weth);
+        // Get the reserves of the pair.
         (uint reserve0, uint reserve1, ) = UniswapV2Pair(pair).getReserves();
-        return (reserve0, reserve1);
+        return (reserve0, reserve1); // Return the reserves.
     }
 }

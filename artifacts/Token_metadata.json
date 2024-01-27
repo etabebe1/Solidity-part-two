@@ -6,13 +6,11 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getTokenReserves",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
@@ -20,7 +18,9 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -37,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"36-interface.sol": "UniswapExample"
+			"46-ABI-Encode.sol": "Token"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -51,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"36-interface.sol": {
-			"keccak256": "0x6bb308a0f9538ac2ee968b23f0080e273f13b5b9aae6352ac9eb65ab973e7d84",
+		"46-ABI-Encode.sol": {
+			"keccak256": "0x09d538b065e58030059e6501067e622dd05a69118da933f20029f40336e1094d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://81e770ccd69de1258d6796bfbafc69e84dd66a64799f2d97a44cf186d0b1377d",
-				"dweb:/ipfs/QmShwC8dMroJ6bsVjwdFSqwGw4foZtgYLxzzpgpTgDAa9j"
+				"bzz-raw://98ccbf2967de9e28c055f7732b475173f71cb46f1f77f4f9a49e4eab5641d16b",
+				"dweb:/ipfs/QmT1w2dkTtv3gRZ91yVGFQXuBvPmjCPgcUBm3w58uAT1kV"
 			]
 		}
 	},
